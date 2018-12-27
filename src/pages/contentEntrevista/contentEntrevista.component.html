@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="parallax-container w">
+            <div class="parallax"><img src="../../assets/noticias/noticeshome/{{entrevista.url}}"></div>
+        </div>
+        <div class="section white">
+            <div class="row container w">
+                <small>Barranquilla | {{entrevista.date}} - hora | {{entrevista.hour}}</small>
+                <div class="col s12 m12 l12 divider">.</div>
+                <h4 class="grey-text text-darken-3 lighten-3">{{entrevista.title}}</h4>
+                <p class="grey-text text-darken-3 lighten-3">{{entrevista.content}}</p>
+
+                <div class="col s12 m12 l12" *ngFor="let item of subContenido">
+                    <h6 class="grey-text text-darken-3 lighten-3"><strong>{{item.title}}</strong></h6>
+                    <p class="grey-text text-darken-3 lighten-3">{{item.content}}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

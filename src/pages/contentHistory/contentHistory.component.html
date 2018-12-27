@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="parallax-container w">
+    <div class="parallax"><img src="../../assets/noticias/noticeshome/{{histories.url}}"></div>
+</div>
+<div class="section white">
+    <div class="row container w">
+        <small>Barranquilla | {{histories.date}} - hora | {{histories.hour}}</small>
+        <small class="right" *ngIf="histories.memoria">A la memoria de - {{histories.memoria}} </small>
+        <div class="col s12 m12 l12 divider">.</div>
+        <h4 class="grey-text text-darken-3 lighten-3">{{histories.title}}</h4>
+        <p class="grey-text text-darken-3 lighten-3">{{histories.content}}</p>
+    </div>
+</div>
+
+<app-footer></app-footer>

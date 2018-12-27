@@ -1,0 +1,49 @@
+.borde{
+    border: 1px solid lightgrey;
+}
+
+.img-opinion{
+    width: 277px;
+    height: 277px;
+    margin-top: 0.4em!important;
+    margin-left: -1em!important;
+}
+
+#content-opine{
+    background: #145D80;
+    height: 100px;
+    position: relative;
+    margin-top: -1%;
+    margin-left: -0.9%;
+}
+
+#title-opine{
+    position: absolute;
+    top: 1.7%!important;
+    left: 37%!important;
+    margin-top: 0.1em;
+    font-family: Roboto;
+}
+
+.banner-ten{
+    height: 277px;
+    width: 207px;
+    margin-left: 1em;
+}
+
+.banner-ten2{
+    height: 277px;
+    width: 207px;
+    margin-top: 5em!important;;
+
+}
+
+h6{
+    font-family: Roboto!important;
+    font-weight: bold;
+}
+
+.height-content{
+    height: 217px!important;
+    overflow: hidden;
+}

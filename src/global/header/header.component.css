@@ -1,0 +1,330 @@
+.container{
+    width: 100%!important;
+}
+
+.borde{
+    border: 1px solid #bdbdbd!important;
+}
+
+.border-black{
+    border:1px solid black!important;
+}
+
+#logo{
+    width: 100px;
+    height: 131px;
+}
+
+#nav{
+    width: 58%!important;
+    margin-left: 25.7%;
+    box-shadow : none;
+    margin-top: -1.7em!important;
+    height: 30%;
+}
+
+#sub-menu{
+    width: 80%!important;
+    margin-left: 10% !important;
+}
+
+.li{
+    height: 23px;
+    margin-top: 1.7em!important;
+    width: 100px;
+    margin-left: 1.7em!important;
+    color: white!important;
+    background: #231F20;
+}
+
+.li-letter{
+    margin-top: -1.4em;
+}
+
+.social-logo{
+    width: 27px;
+    height: 27px;
+    margin-left: 0.7em!important;
+    margin-top: 2.7em!important;
+}
+
+
+#body-pautas{
+    width: 80%!important;
+    margin-left: 10%!important;
+}
+
+.image-notice{
+    width: 247px!important;
+    height: 157px!important;
+    margin-top: 0.3em!important;
+    margin-left: -0.2em!important;
+}
+
+.roboto{
+    font-family: Roboto;
+}
+
+.s{
+    margin-top: -1em!important;
+}
+
+.ver-mas{
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+
+.card-notice{
+    position: relative;
+    height: 243px!important;
+    margin-left: 4em!important;
+    margin-top: 4em;
+}
+
+select{
+    color: black!important;
+    border:1px solid lightgrey!important;
+    margin-top: 4%!important;
+    border-radius: 17px!important;
+    margin-left: 1em!important;
+    height: 37px;
+}
+
+input{
+    border: 1px solid #EDEFF1!important;
+    border-radius: 17px!important;
+    background: white!important;
+    color: black!important;
+    margin-top: 0.5em;
+    height: 35px!important;
+    margin-left: 1em;
+}
+
+#buscar{
+    margin-left: 1em!important;
+    margin-top: 1.2em!important;
+    background: #145D80!important;
+    color: white!important;
+    height: 24px!important;
+    border-radius: 7px;
+    position: relative;
+    width: 100px;
+}
+
+#content-search-inmueble{
+    margin-left: 7%;
+}
+
+#text-btn{
+    position: absolute;
+    top: -7px!important;
+    left: 25%;
+}
+
+.titulo{
+    font-family: Roboto!important;
+}
+
+
+#right-logo{
+    position: absolute;
+    top: 7%;
+    left: 94%;
+    font-size: 77px!important;
+}
+
+#left-logo{
+    position: absolute;
+    top: 7%;
+    left: -0.7%;
+    font-size: 77px!important;
+}
+
+.box-logo{
+    float: left;
+    height: 57px;
+    width: 57px;
+    margin-top: 0.9em;
+    margin-left: 1em;
+}
+
+#background-header{
+    background: url("../../assets/header/banner-de-pagina-web.png");
+    position: center;
+}
+
+#menu {
+    height: 107px!important;
+    width: 10%;
+    position: absolute;
+    top: 99.7%!important;
+    left: 47.2%;
+    background: #231F20!important;
+    display: none;
+    z-index: 100;
+}
+
+#menuMemorias {
+    height: 107px!important;
+    width: 10%;
+    position: absolute;
+    top: 99.7%;
+    left: 66.9%;
+    background: #231F20!important;
+    display: none;
+    z-index: 100;
+}
+
+#text-tendency{
+    position: absolute;
+    top: 7.4%!important;
+    left: 0.1%;
+    font-size: 17px;
+    font-family: Roboto;
+    color: white;
+    width: 100%;
+    height: 47px!important;
+    border-top: 1px solid white;
+}
+
+#text-opinion{
+    position: absolute;
+    top: 30.7%!important;
+    left: 0.1%;
+    font-size: 17px;
+    font-family: Roboto;
+    color: white;
+    width: 100%;
+    height: 27px!important;
+}
+
+a{
+    font-family: Roboto!important;
+}
+
+#text-entrevista{
+    position: absolute;
+    top: 7.7%!important;
+    left: 0.1%;
+    font-size: 17px;
+    font-family: Roboto;
+    color: white;
+    width: 100%;
+    height: 27px!important;
+    border-top: 1px solid white;
+}
+
+#text-historia{
+    position: absolute;
+    top: 30.7%!important;
+    left: 0.1%;
+    font-size: 17px;
+    font-family: Roboto;
+    color: white;
+    width: 100%;
+    height: 27px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#img-opinion{
+    position: absolute;
+    left: 0.8%;
+    top: 34%;
+}
+
+#img-entrevista{
+    position: absolute;
+    left: 1.1%;
+    top: 34%;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    animation-duration: 2s;
+}
+
+input {
+    border: 0.7px solid grey!important;
+    border-radius: 4px!important;
+}
+
+select {
+    border: 0.7px solid grey!important;
+    border-radius: 4px!important;
+    margin-top: 0.2em;
+}
+
+#searchProduct {
+    border: 1px solid lightgrey;
+    width: 400px;
+    border-radius: 4px;
+    background: white;
+    color: black;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+    animation-duration: .75s;
+}
+
+@keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.bounceInRight {
+    animation-name: bounceInRight;
+}
+
+@keyframes bounceOutRight {
+    20% {
+        opacity: 1;
+        transform: translate3d(-20px, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(2000px, 0, 0);
+    }
+}
+
+.bounceOutRight {
+    animation-name: bounceOutRight;
+}
+
+.menu-nav{
+    position: relative;
+}

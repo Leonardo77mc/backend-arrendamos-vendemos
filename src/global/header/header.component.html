@@ -1,0 +1,52 @@
+<div class="container" id="background-header">
+    <div class="row" style="position: relative;">
+
+        <div class="col s12 m12 l12 right-align" id="sub-menu">
+            <a target="_blank" href="https://www.facebook.com/Rvendemos/?view_public_for=308169690014391">
+                <img src="../../assets/icons/facebook_png.png" class="social-logo">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/revistarrendamosyvendemos/?fbclid=IwAR1kbjIpJYfJWPjNNPts5liglnazpTxlK8qVVW1HPKb3l1_6APfwU4zzRP8">
+                <img src="../../assets/icons/instagram.png" class="social-logo">
+            </a>
+            <a target="_blank" href="https://twitter.com/RVendemos?lang=es&fbclid=IwAR2aYq_lJW36uoU2d8mEvYNo3kauejC_JCTEQEaneh2GJG9KIaIgv7Hnyvg">
+                <img src="../../assets/icons/Twitter.png" class="social-logo">
+            </a>
+        </div>
+        <div class="col s12 m12 l12 center" style="height: 131px;"><br>
+
+        </div>
+
+        <nav id="nav" class="white">
+            <div class="nav-wrapper">
+
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="hide-on-med-and-down center">
+                    <li class="li"><a [routerLink]="['/home']" class="li-letter">Inicio</a></li>
+                    <li class="li"><a [routerLink]="['/editorial']" class="li-letter">Editorial</a></li>
+                    <li class="li"><a class="li-letter" (click)="actualidadmenu()">Actualidad</a></li>
+                    <li class="li" [routerLink]="['/notices']"><a class="li-letter">Noticias</a></li>
+                    <li class="li" (click)="memoriasmenu()"><a class="li-letter">Memorias</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="col s12 m12 l12" id="menu">
+            <div class="col s12 m12 l12"><br>
+                <a [routerLink]="['/tendency']" id="text-tendency">Tendencias</a>
+                <a [routerLink]="['/opinion']" id="text-opinion" class="borde">Opinión</a>
+            </div>
+        </div>
+
+        <div class="col s12 m12 l12" id="menuMemorias">
+            <div class="col s12 m12 l12"><br>
+                <a [routerLink]="['/history']" id="text-historia">Historia</a>
+            </div>
+            <div class="col s12 m12 l12">
+                <a [routerLink]="['/article']" id="text-entrevista">Entrevistas</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>

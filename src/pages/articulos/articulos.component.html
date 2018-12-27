@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div class="container" style="width: 100%!important;">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="col s12 m5 l5 borde-white" id="content-interview">
+                <h2 class="white-text" id="title-interview">ENTREVISTAS</h2>
+            </div>
+        </div>
+        <div class="col s12 m12 l12">
+            <div class="col s12 m9 l9">
+                <div class="col s12 m3 l3 borde center card-notice" *ngFor="let item of entrevistas">
+                    <img src="../../assets/noticias/noticeshome/{{item.url}}" class="image-notice">
+                    <div class="col s12 m12 l12" style="margin-top: -0.4em!important;">
+                        <div class="col s12 m12 l12 content-title">
+                        <small class="left-align" style="font-family: Roboto!important;">{{item.title}}</small>
+                        </div>
+                        <a [routerLink]="['/entrevistaContent']">
+                            <small class="ver-mas"
+                                   (click)="seeEntrevista(item._id)">Ver más..
+                            </small>
+                        </a>
+
+                        <div class="fixed-action-btn" (mouseover)="social()">
+                            <a class="btn-floating btn-large blue-cided">
+                                <i class="large material-icons">share</i>
+                            </a>
+                            <ul>
+                                <li><a class="btn-floating yellow darken-1"><img src="../../assets/icons/instagram.png"
+                                                                                 style="width: 37px; height: 38px;"></a>
+                                </li>
+                                <li><a class="btn-floating blue"><img src="../../assets/icons/twitter-material.svg"
+                                                                      style="width: 37px; height: 41px;"></a></li>
+                                <li><a class="btn-floating white"><img
+                                        src="../../assets/icons/facebook-circular-logo.svg"
+                                        style="width: 37px; height: 41px;"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m3 l3">
+                <div class="col s12 m12 l12 white-text center-align">
+                    <img src="../../assets/pautas/LOGO-PAUTA-GRANDE-TRIPLE-A.png" class="banner-ten">
+                </div>
+                <div class="col s12 m12 l12 white-text center-align">
+                    <img src="../../assets/pautas/LOGO-PAUTA-GRANDE-TRIPLE-A.png" class="banner-ten2">
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </div>
+    <app-footer></app-footer>

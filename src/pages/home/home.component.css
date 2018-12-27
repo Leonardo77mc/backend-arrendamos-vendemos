@@ -1,0 +1,131 @@
+.container{
+    width: 100%!important;
+}
+
+.borde{
+    border: 1px solid #bdbdbd;
+}
+
+#slider-home{
+    width: 100%!important;
+}
+
+#body-notice{
+    width: 85%!important;
+
+}
+
+#body-pautas{
+    width: 80%!important;
+    margin-left: 10%!important;
+}
+
+.image-notice{
+    width: 247px!important;
+    height: 157px!important;
+    margin-top: 0.3em!important;
+    margin-left: -0.2em!important;
+}
+
+.roboto{
+    font-family: Roboto;
+}
+
+.s{
+    margin-top: -1em!important;
+}
+
+.ver-mas{
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+
+.card-notice{
+    position: relative;
+    height: 243px!important;
+    margin-left: 4em!important;
+    margin-top: 4em;
+}
+
+#body-inmueble{
+    width: 85%!important;
+    background: #EDEFF1!important;
+}
+
+select{
+    color: black!important;
+    border:1px solid lightgrey!important;
+    margin-top: 4%!important;
+    border-radius: 17px!important;
+    margin-left: 1em!important;
+    height: 37px;
+}
+
+input{
+    border: 1px solid #EDEFF1!important;
+    border-radius: 17px!important;
+    background: white!important;
+    color: black!important;
+    margin-top: 0.5em;
+    height: 35px!important;
+    margin-left: 1em;
+}
+
+#buscar{
+    margin-left: 1em!important;
+    margin-top: 1.2em!important;
+    background: #145D80!important;
+    color: white!important;
+    height: 24px!important;
+    border-radius: 7px;
+    position: relative;
+    width: 100px;
+}
+
+#content-search-inmueble{
+    margin-left: 7%;
+}
+
+#text-btn{
+    position: absolute;
+    top: -7px!important;
+    left: 25%;
+}
+
+.titulo{
+    font-family: Roboto!important;
+}
+
+#content-logos {
+    position: relative;
+    height: 87px;
+    width: 100%!important;
+    border:1px solid #EDEFF1;
+}
+
+.title{
+    font-family: Roboto!important;
+}
+
+#right-logo{
+    position: absolute;
+    top: 7%;
+    left: 94%;
+    font-size: 77px!important;
+}
+
+#left-logo{
+    position: absolute;
+    top: 7%;
+    left: -0.7%;
+    font-size: 77px!important;
+}
+
+.box-logo{
+    float: left;
+    height: 57px;
+    width: 57px;
+    margin-top: 0.9em;
+    margin-left: 1em;
+}

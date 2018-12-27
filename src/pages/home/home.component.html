@@ -1,0 +1,146 @@
+<app-header></app-header>
+<div class="container" style="width: 85%!important;">
+    <div class="row">
+
+<div class="slider" id="slider-home">
+    <ul class="slides">
+        <li>
+            <img src="../../assets/noticias/noticeshome/photoNotice2.png"> <!-- random image -->
+        </li>
+        <li>
+            <img src="../../assets/pautas/LOGO-PAUTA-GRANDE-UNIFIANZA.png"> <!-- random image -->
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+<div class="container border-black" id="body-notice">
+    <div class="row">
+
+        <div class="col s12 m12 l12">
+
+            <div class="col s12 m3 l3 borde center card-notice" *ngFor="let item of notices">
+                <img src="../../assets/noticias/noticeshome/{{item.url}}" class="image-notice">
+                <div class="col s12 m12 l12" style="margin-top: -0.4em!important;">
+                    <h6 class="left-align title">{{item.title}}</h6>
+                    <a [routerLink]="['/content']">
+                        <small class="ver-mas" (click)="detailedNotice(item._id)">Ver más..</small>
+                    </a>
+
+                    <div class="fixed-action-btn" (mouseover)="social()">
+                        <a class="btn-floating btn-large blue-cided">
+                            <i class="large material-icons">share</i>
+                        </a>
+                        <ul>
+                            <li><a class="btn-floating yellow darken-1"><img src="../../assets/icons/instagram.png"
+                                                                             style="width: 37px; height: 38px;"></a>
+                            </li>
+                            <li><a class="btn-floating blue"><img src="../../assets/icons/twitter-material.svg"
+                                                                  style="width: 37px; height: 41px;"></a></li>
+                            <li><a class="btn-floating white"><img src="../../assets/icons/facebook-circular-logo.svg"
+                                                                   style="width: 37px; height: 41px;"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+<br><br>
+<div class="container" id="body-inmueble">
+    <div class="row">
+
+        <div class="col s12 m12 l12 center">
+            <h5 class="titulo">Encuentre aquí su inmueble</h5>
+        </div>
+        <form [formGroup]="formInmueble" (ngSubmit)="searchInmueble()">
+            <div class="col s12 m12 l12" id="content-search-inmueble">
+
+                <div class="col s12 m3 l3">
+                    <select class="browser-default elegance" [formControl]="formInmueble.controls['category']">
+                        <option value="">Seleccióna</option>
+                        <option value="venta-arriendo">Todos</option>
+                        <option value="venta">Comprar</option>
+                        <option value="arriendo">Arrendar</option>
+                    </select>
+                </div>
+
+                <div class="col s12 m3 l3">
+                    <select class="browser-default elegance" [formControl]="formInmueble.controls['typeInmueble']">
+                        <option value="">Tipo de inmueble</option>
+                        <option value="todo">Todos</option>
+                        <option value="casa">Casas</option>
+                        <option value="apartamento">Apartamentos</option>
+                        <option value="oficina">Oficinas</option>
+                        <option value="bodega">Bodegas</option>
+                    </select>
+                </div>
+
+                <div class="col s12 m3 l3">
+                    <input placeholder="Barrio o ciudad" (keyup)="onKey($event)"
+                           [formControl]="formInmueble.controls['searchInmueble']">
+                </div>
+
+                <div class="col s12 m3 l3">
+                    <button id="buscar" class="btn"><span id="text-btn">Buscar</span></button>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="col s12 m12 l12" *ngIf="visualizar">
+
+            <div class="col s12 m3 l3 white borde center card-notice" *ngFor="let item of inmuebles | searchIn:search">
+                <img src="../../assets/noticias/noticeshome/{{item.url}}" class="image-notice" width="200">
+                <div class="col s12 m12 l12" style="margin-top: -0.4em!important;">
+                    <h5 class="left-align roboto">${{item.price}}</h5>
+                    <span class="left roboto">{{item.neighborhood}}</span>
+
+                    <div class="fixed-action-btn">
+                        <a class="btn-floating btn-large red">
+                            <i class="large material-icons white-text">remove_red_eye</i>
+                        </a>
+                        <ul>
+                            <li><a class="btn-floating yellow darken-1"><img src="../../assets/icons/instagram.png"
+                                                                             style="width: 37px; height: 38px;"></a>
+                            </li>
+                            <li><a class="btn-floating blue"><img src="../../assets/icons/twitter-material.svg"
+                                                                  style="width: 37px; height: 41px;"></a></li>
+                            <li><a class="btn-floating white"><img src="../../assets/icons/facebook-circular-logo.svg"
+                                                                   style="width: 37px; height: 41px;"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col s12 m12 l12 white-text">.</div>
+        <div class="col s12 m12 l12 white-text">.</div>
+        <div class="col s12 m12 l12 white-text">.</div>
+        <div class="col s12 m12 l12 white-text">.</div>
+
+        <div class="col s12 m12 l12 white" id="content-logos">
+            <div class="col s1">
+                <i class="material-icons" id="left-logo" (click)="leftLogo()">arrow_left</i>
+            </div>
+            <div class="col s10">
+                <div class="box-logo" *ngFor="let itemUrl of logos">
+                    <img src="../../assets/icons/inmobiliaria/{{itemUrl.url}}" width="57" height="57">
+                </div>
+            </div>
+            <div class="col s1">
+                <i class="material-icons" id="right-logo" (click)="rightLogo()">arrow_right</i>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>

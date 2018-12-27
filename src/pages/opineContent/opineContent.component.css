@@ -1,0 +1,33 @@
+.w{
+    width: 85%!important;
+    height: 340px!important;
+    margin-left: 7.5%;
+}
+
+.ver-mas{
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+
+.card-notice{
+    position: relative;
+    height: 243px!important;
+    margin-left: 4em!important;
+    margin-top: 4em;
+}
+
+.image-notice{
+    width: 247px!important;
+    height: 157px!important;
+    margin-top: 0.3em!important;
+    margin-left: -0.2em!important;
+}
+
+.borde{
+    border: 1px solid lightgrey;
+}
+
+h4{
+    font-family: Roboto!important;
+}

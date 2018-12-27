@@ -1,0 +1,63 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="col s12 m4 l4 borde-white" id="content-tendency">
+                <h2 class="white-text" id="title-tendency">TENDENCIAS</h2>
+            </div>
+        </div>
+        <div class="col s12 m5 l5 white-text border-black">.</div>
+
+        <div class="col s12 m9 l9">
+            <div class="slider" id="slider-tendency">
+                <ul class="slides">
+                    <li>
+                        <img src="../../assets/pautas/LOGO-PAUTA-GRANDE-TRIPLE-A.png"> <!-- random image -->
+                    </li>
+                    <li>
+                        <img src="../../assets/pautas/LOGO-PAUTA-GRANDE-UNIFIANZA.png"> <!-- random image -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col s12 m3 l3 white-text center-align">
+            <img src="../../assets/pautas/LOGO-PAUTA-GRANDE-TRIPLE-A.png" class="banner-ten">
+        </div>
+
+
+        <div class="col s12 m12 l12">
+            <div class="col s12 m10 l10">
+                <div class="col s12 m3 l3 borde center card-notice" *ngFor="let item of tendencys">
+                    <img src="../../assets/noticias/noticeshome/{{item.url}}" class="image-notice">
+                    <div class="col s12 m12 l12" style="margin-top: -0.4em!important;">
+                        <h6 class="left-align">{{item.title}}</h6>
+                        <a [routerLink]="['/tendencyOneContent']">
+                            <small class="ver-mas" (click)="detailedNotice(item._id)">Ver más..</small>
+                        </a>
+
+                        <div class="fixed-action-btn" (mouseover)="social()">
+                            <a class="btn-floating btn-large blue-cided">
+                                <i class="large material-icons">share</i>
+                            </a>
+                            <ul>
+                                <li><a class="btn-floating yellow darken-1"><img src="../../assets/icons/instagram.png"
+                                                                                 style="width: 37px; height: 38px;"></a>
+                                </li>
+                                <li><a class="btn-floating blue"><img src="../../assets/icons/twitter-material.svg"
+                                                                      style="width: 37px; height: 41px;"></a></li>
+                                <li><a class="btn-floating white"><img
+                                        src="../../assets/icons/facebook-circular-logo.svg"
+                                        style="width: 37px; height: 41px;"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m2 l2 white-text center-align">
+                <img src="../../assets/pautas/LOGO-PAUTA-GRANDE-TRIPLE-A.png" class="banner-ten2">
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

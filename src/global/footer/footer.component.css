@@ -1,0 +1,65 @@
+.logo-footer{
+    width: 37px!important;
+    height: 37px!important;
+}
+
+.background-footer {
+    background: #133B64!important;
+}
+
+.text-footer{
+    font-size: 17px!important;
+    font-weight: bold!important;
+    color: #fafafa!important;
+}
+
+#content-footer{
+    border-left:1px solid white!important;
+    border-right:1px solid white!important;
+}
+
+#right-footer{
+    position: relative!important;
+}
+
+h5{
+    font-family: Roboto!important;
+}
+
+h5{
+    font-family: Roboto!important;
+}
+
+h6{
+    font-family: Roboto!important;
+}
+
+#dir-footer{
+    position: absolute!important;
+    top: 53%!important;
+    left: 14%!important;
+}
+
+#street-footer{
+    position: absolute!important;
+    top: 58%!important;
+    left: 14%!important;
+}
+
+#floor-footer{
+    position: absolute!important;
+    top: 62.7%!important;
+    left: 14%!important;
+}
+
+#telephone-footer{
+    position: absolute!important;
+    top: 67.7%!important;
+    left: 14%!important;
+}
+
+#email-footer{
+    position: absolute!important;
+    top: 72.7%!important;
+    left: 14%!important;
+}
